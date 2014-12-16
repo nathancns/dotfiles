@@ -33,7 +33,13 @@ ln -s ~/Dropbox/dotfiles/bash_aliases ~/.bash_aliases
 
 ### Setting up tmux
 ```bash
-ln -s ~/Dropbox/dotfiles/tmux.conf .tmux.conf
+ln -s ~/Dropbox/dotfiles/tmux.conf ~/.tmux.conf
+```
+
+### Setting up i3
+```bash
+ln -s ~/Dropbox/dotfiles/i3 ~/.i3
+ln -s ~/Dropbox/dotfiles/i3status.conf ~/.i3status.conf
 ```
 
 [Vundle]:http://github.com/gmarik/Vundle.vim
