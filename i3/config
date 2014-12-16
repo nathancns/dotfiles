@@ -10,6 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+# Henkan_Mode
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -129,6 +130,15 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
+
+# Show the sup-mail scratchpad window, if any.
+bindsym mod4+Shift+s [title="^Sup ::"] scratchpad show
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -174,7 +184,7 @@ exec feh --bg-scale ~/Pictures/kamakura-takenomori.jpg
 exec pasystray &
 
 # Set dbus session for dunst / notify-send / crontab
-~/bin/set_dbus_session
+exec ~/bin/set_dbus_session
 
 #    output            LVDS1
 #    position          bottom 
