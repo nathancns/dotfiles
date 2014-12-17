@@ -21,6 +21,7 @@ call vundle#begin()
  " My Plugins here:
  "
  " original repos on github
+ Plugin 'editorconfig/editorconfig-vim'
  Plugin 'tpope/vim-fugitive'
  Plugin 'Lokaltog/vim-easymotion'
  Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
