@@ -18,6 +18,11 @@ ln -s ~/Dropbox/dotfiles/vimrc ~/.vimrc
 vim +PluginInstall +qall
 ```
 
+### Symlink editorconfig
+```bash
+ln -s ~/Dropbox/dotfiles/editorconfig ~/.editorconfig
+```
+
 ### Compile YouCompleteMe
 ```
 cd ~/.vim/bundle/YouCompleteMe
